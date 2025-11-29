@@ -1,0 +1,23 @@
+{
+  "theme": {
+    "fontFamily": {
+      "mono": "\"JetBrains Mono\", \"JetBrains Mono Fallback\", monospace"
+    },
+    "colors": {
+      "background": "#fff",
+      "foreground": "#171717",
+      "selection": {
+        "color": "#fff",
+        "background": "#000"
+      },
+      "gray": {
+        "50": "#f9fafb",
+        "100": "#f3f4f6",
+        "300": "#d1d5dc",
+        "400": "#99a1af",
+        "600": "#4a5565"
+      }
+    }
+  },
+  "rawCss": "\n.jetbrains_mono_7d65b77b-module__VxV-Ta__variable {\n    --font-jetbrains-mono: \"JetBrains Mono\", \"JetBrains Mono Fallback\";\n}\nbody {\n    font-family: var(--font-jetbrains-mono), \"JetBrains Mono\", monospace;\n    color: #000;\n    background: #fff;\n    line-height: 1.6;\n    overflow-x: hidden;\n}\nbody {\n    background: var(--background);\n    color: var(--foreground);\n    font-family: var(--font-jetbrains-mono), \"JetBrains Mono\", monospace;\n}\n* {\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n}\n.antialiased {\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n*, :after, :before, ::backdrop {\n    box-sizing: border-box;\n    border: 0 solid;\n    margin: 0;\n    padding: 0;\n}\n:root {\n    --background: #fff;\n    --foreground: #171717;\n}\n:root, :host {\n    --color-gray-50: #f9fafb;\n    --color-gray-100: #f3f4f6;\n    --color-gray-300: #d1d5dc;\n    --color-gray-400: #99a1af;\n    --color-gray-600: #4a5565;\n    --color-black: #000;\n    --color-white: #fff;\n    --spacing: .25rem;\n    --default-font-family: var(--font-jetbrains-mono);\n}\n::selection {\n    color: #fff;\n    background: #000;\n}\n"
+}

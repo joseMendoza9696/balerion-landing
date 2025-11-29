@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balerion - AI Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"JetBrains Mono"', '"JetBrains Mono Fallback"', 'monospace']
+            },
+            colors: {
+              background: 'var(--background)',
+              foreground: 'var(--foreground)',
+              // Specific gray overrides from provided CSS
+              gray: {
+                50: '#f9fafb',
+                100: '#f3f4f6',
+                300: '#d1d5dc',
+                400: '#99a1af',
+                600: '#4a5565',
+              },
+              "color-1": "hsl(var(--color-1))",
+              "color-2": "hsl(var(--color-2))",
+              "color-3": "hsl(var(--color-3))",
+              "color-4": "hsl(var(--color-4))",
+              "color-5": "hsl(var(--color-5))",
+            },
+            spacing: {
+              DEFAULT: '0.25rem'
+            },
+            animation: {
+              'scroll': 'scroll 40s linear infinite',
+              'rainbow': 'rainbow var(--speed, 2s) infinite linear',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              rainbow: {
+                '0%': { 'background-position': '0%' },
+                '100%': { 'background-position': '200%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --font-jetbrains-mono: "JetBrains Mono", "JetBrains Mono Fallback";
+        --background: #fff;
+        --foreground: #171717;
+        
+        /* Custom Colors from CSS */
+        --color-gray-50: #f9fafb;
+        --color-gray-100: #f3f4f6;
+        --color-gray-300: #d1d5dc;
+        --color-gray-400: #99a1af;
+        --color-gray-600: #4a5565;
+        --color-black: #000;
+        --color-white: #fff;
+
+        /* Rainbow Button Colors */
+        --color-1: 0 100% 63%;
+        --color-2: 270 100% 63%;
+        --color-3: 210 100% 63%;
+        --color-4: 195 100% 63%;
+        --color-5: 90 100% 63%;
+      }
+
+      /* Global Reset & Base Styles */
+      *, :after, :before, ::backdrop {
+        box-sizing: border-box;
+        border: 0 solid;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-jetbrains-mono), monospace;
+        color: var(--foreground);
+        background: var(--background);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+      
+      /* Selection Styles */
+      ::selection {
+        color: #fff;
+        background: #000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6?external=react,react-dom",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+    "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^2.5.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
